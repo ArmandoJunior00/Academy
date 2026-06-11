@@ -2,11 +2,46 @@
 <html lang="pt-br" xmlns:th = "http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel = stylesheet href="../css/style.css"/>
     <title>Academy</title>
+    <script src="https://kit.fontawesome/006642858d.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <p>Olá mundo</p>
-    <h1 th:text="${msg}"></h1>
-    <h1 th:text="${msg}"></h1>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
+        <a class="nav-brand" href="#">
+            <img src="img/logo.png" width="200px">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navMobile" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pesquisar Aluno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
+<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
